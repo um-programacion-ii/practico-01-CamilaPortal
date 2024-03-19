@@ -1,8 +1,8 @@
 package entity;
 
 public class Ingrediente {
-    public String nombre;
-    public int cantidad;
+    private String nombre;
+    private int cantidad;
 
     public Ingrediente (String nombre, int cantidad){
         this.nombre = nombre;
