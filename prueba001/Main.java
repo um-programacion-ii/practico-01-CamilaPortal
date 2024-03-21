@@ -1,3 +1,4 @@
+import entity.Despensa;
 import entity.Ingrediente;
 
 public class Main {
@@ -7,6 +8,14 @@ public class Main {
 
         System.out.println(ingrediente1);
         System.out.println(ingrediente2);
+
+        Despensa despensa = new Despensa();
+
+        despensa.addIngrediente(ingrediente1);
+        despensa.addIngrediente(ingrediente2);
+
+        despensa.getIngrediente("Agua", 400);
+        despensa.getIngrediente("Arroz", 1);
     }
 
 }

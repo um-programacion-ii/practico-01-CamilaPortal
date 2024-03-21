@@ -9,6 +9,17 @@ public class Ingrediente {
         this.cantidad = cantidad;
     }
 
+    public void sacar(int cantRetirada){
+
+        if (cantidad >= cantRetirada){
+            this.cantidad -= cantRetirada;
+            System.out.println("Retiraste exitosamente. Quedan: "+ cantidad + " de " + nombre);
+        }
+        else {
+            System.out.println("La cantidad de " + nombre+ " retirar es mayor que la cantidad actual");
+        }
+    }
+
     public String getNombre() {
         return nombre;
     }
