@@ -1,5 +1,4 @@
-import entity.Despensa;
-import entity.Ingrediente;
+import entity.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +15,20 @@ public class Main {
 
         despensa.getIngrediente("Agua", 400);
         despensa.getIngrediente("Arroz", 1);
+
+        HuevoDuro huevoDuro = new HuevoDuro();
+        Ensalada ensalada = new Ensalada();
+        EnsaladaDeFrutas ensaladaDeFrutas = new EnsaladaDeFrutas();
+
+        // Mostrar los detalles de cada receta
+        System.out.println("\nReceta de Huevo Duro:");
+        System.out.println(huevoDuro);
+
+        System.out.println("\nReceta de Ensalada:");
+        System.out.println(ensalada);
+
+        System.out.println("\nReceta de Ensalada de Frutas:");
+        System.out.println(ensaladaDeFrutas);
     }
 
 }
