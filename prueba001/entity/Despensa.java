@@ -24,4 +24,8 @@ public class Despensa {
         }
         System.out.println("No tenés " + nombre + " en la despensa");
     }
+
+    public List<Ingrediente> getIngredientes() {
+        return ingredientes;
+    }
 }
